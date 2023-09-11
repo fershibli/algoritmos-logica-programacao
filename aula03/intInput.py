@@ -5,3 +5,11 @@ def digitInput(input_text, condition=lambda value: True, parse_float=False):
         return float(value)
     else:
         return int(value)
+
+
+def intInput(input_text, condition=lambda value: True):
+    digitInput(input_text, condition, False)
+
+
+def floatInput(input_text, condition=lambda value: True):
+    digitInput(input_text, condition, False)
