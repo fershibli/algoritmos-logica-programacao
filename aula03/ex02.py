@@ -1,4 +1,4 @@
-from intInput import intInput
+from digitInput import intInput
 
 a,b = [intInput(f'Digite o {n+1}º número:\n>>>') for n in range(2)]
 
