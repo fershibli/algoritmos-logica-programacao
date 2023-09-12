@@ -8,8 +8,8 @@ def digitInput(input_text, condition=lambda value: True, parse_float=False):
 
 
 def intInput(input_text, condition=lambda value: True):
-    digitInput(input_text, condition, False)
+    return digitInput(input_text, condition, False)
 
 
 def floatInput(input_text, condition=lambda value: True):
-    digitInput(input_text, condition, False)
+    return digitInput(input_text, condition, False)
