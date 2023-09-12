@@ -1,6 +1,6 @@
 from digitInput import floatInput
 
-student_grades = [floatInput(f'Insira sua {n+1}ª nota:\n>>>', lambda value: 0 <= value <= 10) for n in range(3)]
+student_grades = [floatInput(f'Insira sua {n+1}ª nota:\n>>>', lambda value: 0 <= value <= 10, 'O valor \"{value}\" não é uma nota válida entre 0 e 10.') for n in range(3)]
 
 grade_average = sum(student_grades) / len(student_grades)
 
