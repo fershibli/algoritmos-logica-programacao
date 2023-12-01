@@ -1,5 +1,7 @@
 def isPrime(number):
-    for n in range(2, number//2):
+    for n in range(2, 1+(number//2)):
+        if number == n:
+            pass
         if number % n == 0:
             return False
     return True
